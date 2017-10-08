@@ -1,32 +1,21 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main ()
+{
+	int counter = 0;
+	double max;
+	double num;
 
-# Precompiled Headers
-*.gch
-*.pch
+	cout << "Enter 15 numbers. Enter the first number: ";
+	cin >> max;
+	for (counter = 0 ; counter < 15; counter++)
+	{
+	cout << "Enter the next number: ";
+	cin >> num;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+	if (max < num)
+		max = num;
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	}
+	cout << "The largest number is: " << max << endl;}
